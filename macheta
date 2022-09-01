@@ -3,8 +3,14 @@ def f_decript (str_encript , s_key):
     list_frase=list(str_encript)                    #Se divide las letras de la frase en una ista
     print(list_frase)
     l_key=int(s_key)                        #Se pasa s_key a un numero entero
-    str_msg=[]                             #Lista que va guardando las letras        
+    str_msg=[]                             #Lista que va guardando las letras
+    j=0
     for letra in letras:                    #Buscar letra en letras
         for i in range (len(list_frase)):   #La i se evalua en el total de letras de la oración
             if list_frase [i]==letra:           #si "i" == letra entonces
-                pass
+                j=i-l_key                     #Para desencriptar
+                str_msg = str_msg + list_frase [j]
+
+
+
+print(f_decript("hola",3))
