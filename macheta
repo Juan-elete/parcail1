@@ -7,10 +7,15 @@ def f_decript (str_encript , s_key):
     j=0
     for letra in letras:                    #Buscar letra en letras
         for i in range (len(list_frase)):   #La i se evalua en el total de letras de la oración
-            if list_frase [i]==letra:           #si "i" == letra entonces
+            if list_frase[i]==letra:           #si "i" == letra entonces
                 j=i-l_key                     #Para desencriptar
-                str_msg = str_msg + list_frase [j]
-
+                str_msg = str_msg + list_frase[j]
+            return(str_msg)
 
 
 print(f_decript("hola",3))
+
+
+
+
+
