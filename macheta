@@ -1,12 +1,10 @@
-l_letras=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+letras=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
 def f_decript (str_encript , s_key):
-    list_frase=list(str_encript)
+    list_frase=list(str_encript)                    #Se divide las letras de la frase en una ista
     print(list_frase)
-    l_key=int(s_key)                        #Se pasa
-    str_msg=[]                             #Lista que va guardando las letras
-
-
-
-
-
-    #for i in range (0,25,1):
+    l_key=int(s_key)                        #Se pasa s_key a un numero entero
+    str_msg=[]                             #Lista que va guardando las letras        
+    for letra in letras:                    #Buscar letra en letras
+        for i in range (len(list_frase)):   #La i se evalua en el total de letras de la oración
+            if list_frase [i]==letra:           #si "i" == letra entonces
+                pass
